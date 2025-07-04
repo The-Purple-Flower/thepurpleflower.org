@@ -139,6 +139,7 @@ html,
 
 body {
 	margin: 0;
+	font-family: Urbanist, sans-serif;
 	line-height: inherit
 }
 
@@ -159,8 +160,12 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Gabarito", sans-serif;	
 	font-size: inherit;
-	font-weight: inherit
+	font-weight: inherit;
+}
+h1 {
+	font-weight: 400;	
 }
 
 a {
