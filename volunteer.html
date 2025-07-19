@@ -1,123 +1,123 @@
 <html lang="en"><head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQQHVZCEBV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TQ4D6R9Z');</script>
+  <!-- End Google Tag Manager -->
 
-  gtag('config', 'G-JQQHVZCEBV');
-</script>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Purple Flower | Supporter FAQs</title>
+  <!-- <base href="https://thepurpleflower.org" /> -->
+  <!-- <script type="module" crossorigin="" src="/assets/index-BkgkDEYT.js"></script> -->
 
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Purple Flower | Supporter FAQs</title>
-    <!-- <base href="https://thepurpleflower.org" /> -->
-    <!-- <script type="module" crossorigin="" src="/assets/index-BkgkDEYT.js"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 
-    <link rel="stylesheet" href="./styles.css">
+  <style>
+  section a {
+    text-decoration: underline;
+  }
+  #donate a.rounded-full {
+    text-decoration: none;
+  }
+  /* Base DL Styling */
+  dl.faq-accordion {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
 
+  /* DT = Question */
+  dl.faq-accordion dt {
+    padding: 16px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+  }
 
-<style>
-section a {
-  text-decoration: underline;
-}
-#donate a.rounded-full {
-  text-decoration: none;
-}
-/* Base DL Styling */
-dl.faq-accordion {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
-}
+  /* Hover and Focus States */
+  dl.faq-accordion dt:hover {
+    background-color: #f0f0f0;
+  }
 
-/* DT = Question */
-dl.faq-accordion dt {
-  padding: 16px 20px;
-  background-color: #f8f8f8;
-  color: #333;
-  cursor: pointer;
-  font-weight: bold;
-  position: relative;
-  margin: 0;
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.2s;
-}
+  dl.faq-accordion dt:focus {
+    outline: 2px solid #6e8cff;
+    outline-offset: -2px;
+  }
 
-/* Hover and Focus States */
-dl.faq-accordion dt:hover {
-  background-color: #f0f0f0;
-}
+  /* Plus/Minus Indicator */
+  dl.faq-accordion dt::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+  }
 
-dl.faq-accordion dt:focus {
-  outline: 2px solid #6e8cff;
-  outline-offset: -2px;
-}
+  /* DD = Answer (initially hidden) */
+  dl.faq-accordion dd {
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background-color: white;
+  }
 
-/* Plus/Minus Indicator */
-dl.faq-accordion dt::after {
-  content: '+';
-  position: absolute;
-  right: 20px;
-  font-size: 1.2em;
-  transition: transform 0.3s;
-}
+  /* Active State (when clicked) */
+  dl.faq-accordion dt.active {
+    background-color: #e9e9e9;
+    border-bottom-color: transparent;
+  }
 
-/* DD = Answer (initially hidden) */
-dl.faq-accordion dd {
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease;
-  background-color: white;
-}
+  dl.faq-accordion dt.active::after {
+    content: '-';
+  }
 
-/* Active State (when clicked) */
-dl.faq-accordion dt.active {
-  background-color: #e9e9e9;
-  border-bottom-color: transparent;
-}
+  dl.faq-accordion dt.active + dd {
+    padding: 16px 20px;
+    max-height: 1000px; /* Adjust based on your longest content */
+    border-bottom: 1px solid #e0e0e0;
+  }
 
-dl.faq-accordion dt.active::after {
-  content: '-';
-}
+  /* List styling within answers */
+  dl.faq-accordion dd ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
 
-dl.faq-accordion dt.active + dd {
-  padding: 16px 20px;
-  max-height: 1000px; /* Adjust based on your longest content */
-  border-bottom: 1px solid #e0e0e0;
-}
+  dl.faq-accordion dd li {
+    margin-bottom: 8px;
+  }
 
-/* List styling within answers */
-dl.faq-accordion dd ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
+  /* Remove border from last item */
+  dl.faq-accordion dt:last-of-type,
+  dl.faq-accordion dd:last-of-type {
+    border-bottom: none;
+  }
+  </style>
 
-dl.faq-accordion dd li {
-  margin-bottom: 8px;
-}
-
-/* Remove border from last item */
-dl.faq-accordion dt:last-of-type,
-dl.faq-accordion dd:last-of-type {
-  border-bottom: none;
-}
-</style>
-
-  </head>
-  <body data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="">
-
+</head>
+<body data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ4D6R9Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div id="root">
   <div class="min-h-screen bg-white">
