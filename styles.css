@@ -179,13 +179,10 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: "Gabarito","Urbanist",sans-serif;
 	font-size: inherit;
-	font-weight: inherit;
+	font-weight: 400;
 }
-h1 {
-	font-weight: 400;	
-}
-
 a {
 	color: inherit;
 	text-decoration: inherit
@@ -1363,6 +1360,7 @@ a.button { text-decoration: none; }
   text-decoration: none;
 }
 h1.page-title { padding-left: 1em; color: #fff; font-size: 1.2rem;}
+h1.main-title { font-family: "Gabarito"; }
 .font-logo-hdr {
     font-family: "Gabarito", sans-serif;
     font-size: 1.5rem;
