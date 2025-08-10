@@ -818,27 +818,27 @@ video {
 }
 
 .border-gray {
-	border-color: rgb(31 41 55 / var(--tw-border-opacity))
+	border-color: rgb(31 41 55 / 1)
 }
 
 .border-accent{
-	border-color: rgb(254 215 170 / var(--tw-border-opacity))
+	border-color: rgb(254 215 170 / 1)
 }
 
 .border-primary1{
-	border-color: rgb(237 229 254 / var(--tw-border-opacity))
+	border-color: rgb(237 229 254 / 1)
 }
 
 .border-primary2 {
-	border-color: rgb(218 203 252 / var(--tw-border-opacity))
+	border-color: rgb(218 203 252 / 1)
 }
 
 .bg-gray {
-	background-color: rgb(17 24 39 / var(--tw-bg-opacity))
+	background-color: rgb(17 24 39 / 1)
 }
 
 .bg-purple {
-	background-color: rgb(var(--pfbrand-rgb) / var(--tw-bg-opacity))
+	background-color: rgb(var(--pfbrand-rgb) / 1)
 }
 a.bg-purple:hover {
 
@@ -856,43 +856,43 @@ a.bg-purple:hover {
 
 
 .bg-purple-100 {
-	background-color: rgb(237 229 254 / var(--tw-bg-opacity))
+	background-color: rgb(237 229 254 / 1)
 }
 
 .bg-purple-300 {
-	background-color: rgb(192 164 250 / var(--tw-bg-opacity))
+	background-color: rgb(192 164 250 / 1)
 }
 
 .bg-purple-50 {
-	background-color: rgb(247 242 255 / var(--tw-bg-opacity))
+	background-color: rgb(247 242 255 / 1)
 }
 
 .bg-purple-500 {
-	background-color: rgb(135 82 240 / var(--tw-bg-opacity))
+	background-color: rgb(135 82 240 / 1)
 }
 
 .bg-purple-600 {
-	background-color: rgb(117 59 228 / var(--tw-bg-opacity))
+	background-color: rgb(117 59 228 / 1)
 }
 
 .bg-purple-700 {
-	background-color: rgb(100 41 207 / var(--tw-bg-opacity))
+	background-color: rgb(100 41 207 / 1)
 }
 
 .bg-purple-800 {
-	background-color: rgb(83 36 168 / var(--tw-bg-opacity))
+	background-color: rgb(83 36 168 / 1)
 }
 
 .bg-purple-900 {
-	background-color: rgb(89 65 153 / var(--tw-bg-opacity))
+	background-color: rgb(89 65 153 / 1)
 }
 
 .bg-red-50 {
-	background-color: rgb(254 242 242 / var(--tw-bg-opacity))
+	background-color: rgb(254 242 242 / 1)
 }
 
 .bg-red-600 {
-	background-color: rgb(220 38 38 / var(--tw-bg-opacity))
+	background-color: rgb(220 38 38 / 1)
 }
 
 .bg-transparent {
@@ -901,30 +901,6 @@ a.bg-purple:hover {
 
 .bg-white {
 	background-color: #fff
-}
-
-/*.bg-\[url\(\'https\:\/\/www\.transparenttextures\.com\/patterns\/subtle-white-feathers\.png\'\)\] {
-	background-image: url(https://www.transparenttextures.com/patterns/subtle-white-feathers.png)
-}
-*/
-
-.bg-gradient-to-br {
-	background-image: linear-gradient(to bottom right, var(--tw-gradient-stops))
-}
-
-.from-purple-900 {
-	--tw-gradient-from: #594199 var(--tw-gradient-from-position);
-	--tw-gradient-to: rgb(89 65 153 / 0) var(--tw-gradient-to-position);
-	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
-}
-
-.via-purple-700 {
-	--tw-gradient-to: rgb(100 41 207 / 0) var(--tw-gradient-to-position);
-	--tw-gradient-stops: var(--tw-gradient-from), #6429cf var(--tw-gradient-via-position), var(--tw-gradient-to)
-}
-
-.to-purple-800 {
-	--tw-gradient-to: #5324a8 var(--tw-gradient-to-position)
 }
 
 .p-3 {
@@ -1213,32 +1189,32 @@ a.bg-purple:hover {
 
 .hover\:bg-gray-100:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+	background-color: rgb(243 244 246 / 1)
 }
 
 .hover\:bg-purple-100:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(237 229 254 / var(--tw-bg-opacity))
+	background-color: rgb(237 229 254 / 1)
 }
 
 .hover\:bg-purple-600:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(117 59 228 / var(--tw-bg-opacity))
+	background-color: rgb(117 59 228 / 1)
 }
 
 .hover\:bg-purple-700:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(100 41 207 / var(--tw-bg-opacity))
+	background-color: rgb(100 41 207 / 1)
 }
 
 .hover\:bg-purple-800:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(83 36 168 / var(--tw-bg-opacity))
+	background-color: rgb(83 36 168 / 1)
 }
 
 .hover\:bg-red-700:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgb(185 28 28 / var(--tw-bg-opacity))
+	background-color: rgb(185 28 28 / 1)
 }
 
 .hover\:text-purple-200:hover {
