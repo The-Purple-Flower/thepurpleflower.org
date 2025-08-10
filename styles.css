@@ -1,4 +1,14 @@
+/*
 @import"https://fonts.cdnfonts.com/css/honeymoon";
+@font-face {
+  font-family: 'Honeymoon';
+  src: url('https://fonts.cdnfonts.com/s/honeymoon/Honeymoon.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/honeymoon/Honeymoon.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+*/
 
 :root {
 	--tw-text-opacity: 1;
@@ -1005,10 +1015,6 @@ a.bg-purple:hover {
 	text-align: center
 }
 
-.font-honeymoon {
-	font-family: Honeymoon
-}
-
 .text-2xl {
 	font-size: 1.5rem;
 	line-height: 2rem
@@ -1360,6 +1366,9 @@ h1.page-title { padding-left: 1em; color: #fff; font-size: 1.2rem;}
 .font-logo-hdr {
     font-family: "Gabarito", sans-serif;
     font-size: 1.5rem;
+}
+.font-honeymoon {
+  font-family: 'Gabarito', sans-serif;
 }
 img.photo { border: solid 1px black; }
 img.photo.left { margin-right: 2em; }
