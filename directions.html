@@ -28,42 +28,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="root">
   <div class="min-h-screen bg-white">
-    <div class="bg-purple-600 text-white py-2 px-4 shadow-md fixed bottom-0 left-0 right-0 z-50">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="flex items-center">
-           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-purple-400 mr-3 mt-1">
-                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-          <a href="https://google.com" class="underline">109 W. Church Avenue, Berryville</a> &nbsp;| 
-          501(c)(3) Nonprofit #47-2661286
-        </div>
-      </div>
-    </div>
 
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-purple shadow-md py-2">
       <div class="container mx-auto px-4 flex justify-between items-center">
-        <a href="https://thepurpleflower.org" class="flex items-center">
-          <img src="https://thepurpleflower.org/images/pf-logo-wht-bkgrd_200sq.png" alt="The Purple Flower Logo" class="h-12 w-12 mr-3">
-          <h1 class="transition-all duration-300 text-white text-xl"><span class="font-honeymoon">The Purple Flower</span> Directions</h1>
+        <a href="./index.html" class="flex items-center">
+          <img src="./pf-logo-wht-bkgrd_200sq.png" alt="The Purple Flower Logo" class="h-12 w-12 mr-3">
+          <h1 class="transition-all duration-300 text-white text-xl"><span class="font-logo-hdr">The Purple Flower</span> 
+          </h1>
         </a>
+        <!-- <h1 class="page-title">Directions</h1> -->
 
 <!-- NAVIGATION --> 
         <nav class="hidden md:flex items-center space-x-6">
-          <a href="index.html" class="text-white px-4 hover:text-purple-200 transition-colors">&larr; Website</a>
-          <a href="donate.html" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full transition-colors font-medium">Donate</a>
+          <a href="./index.html" class="text-white px-4 hover:text-purple-200 transition-colors">&larr; Website</a>
+          <a href="./donate.html" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full transition-colors font-medium">Donate</a>
         </nav>
       </div>
     </header>
 
     <section class="relative flex items-center justify-center pt-16 pb-20">
-      <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-purple-700 to-purple-800 opacity-90 z-0"></div>
+      <div class="absolute inset-0 bg-pfbrand z-0"></div>
       <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png')] opacity-10 z-0"></div>
       <div class="container mx-auto px-6 z-10 text-center">
         <div class="max-w-3xl mx-auto">
           <br><br>
           <h1 class="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight animate-fade-in">Finding Us</h1>
-          <p class="text-xl md:text-2xl text-purple-100 mb-8 max-w-2xl mx-auto">We're located at 109 W. Church Avenue in Berryville, just a block from the town square at the intersection of W Church Ave and Spring St.</p>
+          <p class="text-xl md:text-2xl text-purple-100 mb-8 max-w-2xl mx-auto">We're located at 
+            <a data-ga-track="Address Directions" class="ga-track underline" href="https://maps.app.goo.gl/Jqto5yi9p1Xg5ZfPA">109 W. Church Avenue in Berryville</a>, just a block from the town square at the intersection of W Church Ave and Spring St.
+            <b>Open Monday-Friday 10am - 3pm</b></p>
         </div>
       </div>
     </section>

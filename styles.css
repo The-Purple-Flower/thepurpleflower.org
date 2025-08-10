@@ -1,5 +1,15 @@
 @import"https://fonts.cdnfonts.com/css/honeymoon";
 
+:root {
+	--tw-text-opacity: 1;
+	--tw-bg-opacity: 1;
+	--tw-border-opacity: 1;
+	--pfbrand-rgb: 89 65 153;
+}
+.bg-pfbrand {
+	background-color: rgb(var(--pfbrand-rgb) / 1);
+}
+	
 *,
 :before,
 :after {
@@ -153,14 +163,12 @@ abbr:where([title]) {
 	-webkit-text-decoration: underline dotted;
 	text-decoration: underline dotted
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Gabarito", sans-serif;	
 	font-size: inherit;
 	font-weight: inherit;
 }
@@ -802,108 +810,81 @@ video {
 	border-top-width: 1px
 }
 
-.border-gray-800 {
-	--tw-border-opacity: 1;
+.border-gray {
 	border-color: rgb(31 41 55 / var(--tw-border-opacity))
 }
 
-.border-orange-200 {
-	--tw-border-opacity: 1;
+.border-accent{
 	border-color: rgb(254 215 170 / var(--tw-border-opacity))
 }
 
-.border-purple-100 {
-	--tw-border-opacity: 1;
+.border-primary1{
 	border-color: rgb(237 229 254 / var(--tw-border-opacity))
 }
 
-.border-purple-200 {
-	--tw-border-opacity: 1;
+.border-primary2 {
 	border-color: rgb(218 203 252 / var(--tw-border-opacity))
 }
 
-.border-purple-600 {
-	--tw-border-opacity: 1;
-	border-color: rgb(117 59 228 / var(--tw-border-opacity))
-}
-
-.border-red-200 {
-	--tw-border-opacity: 1;
-	border-color: rgb(254 202 202 / var(--tw-border-opacity))
-}
-
-.bg-purple {
-	--tw-bg-opacity: 1;
-	background-color: rgb(89 65 153 / var(--tw-bg-opacity))
-}
-
-.bg-gray-50 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(249 250 251 / var(--tw-bg-opacity))
-}
-
-.bg-gray-800 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(31 41 55 / var(--tw-bg-opacity))
-}
-
-.bg-gray-900 {
-	--tw-bg-opacity: 1;
+.bg-gray {
 	background-color: rgb(17 24 39 / var(--tw-bg-opacity))
 }
 
-.bg-orange-50 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(255 247 237 / var(--tw-bg-opacity))
+.bg-purple {
+	background-color: rgb(var(--pfbrand-rgb) / var(--tw-bg-opacity))
+}
+a.bg-purple:hover {
+
+}
+.button-primary {
+	background-color: rgb(135 82 240 / 1);
+	color: #fff;
+	font-weight: bold;
+
+}
+.button-primary:hover {
+	background-color: rgb(117 59 228 / 1);	
+	color: #fff;
 }
 
+
 .bg-purple-100 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(237 229 254 / var(--tw-bg-opacity))
 }
 
 .bg-purple-300 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(192 164 250 / var(--tw-bg-opacity))
 }
 
 .bg-purple-50 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(247 242 255 / var(--tw-bg-opacity))
 }
 
 .bg-purple-500 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(135 82 240 / var(--tw-bg-opacity))
 }
 
 .bg-purple-600 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(117 59 228 / var(--tw-bg-opacity))
 }
 
 .bg-purple-700 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(100 41 207 / var(--tw-bg-opacity))
 }
 
 .bg-purple-800 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(83 36 168 / var(--tw-bg-opacity))
 }
 
 .bg-purple-900 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(89 65 153 / var(--tw-bg-opacity))
 }
 
 .bg-red-50 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(254 242 242 / var(--tw-bg-opacity))
 }
 
 .bg-red-600 {
-	--tw-bg-opacity: 1;
 	background-color: rgb(220 38 38 / var(--tw-bg-opacity))
 }
 
@@ -912,8 +893,7 @@ video {
 }
 
 .bg-white {
-	--tw-bg-opacity: 1;
-	background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+	background-color: #fff
 }
 
 /*.bg-\[url\(\'https\:\/\/www\.transparenttextures\.com\/patterns\/subtle-white-feathers\.png\'\)\] {
@@ -1045,7 +1025,7 @@ video {
 }
 
 .text-lg {
-	font-size: 1.125rem;
+	font-size: 1.225rem;
 	line-height: 1.75rem
 }
 
@@ -1092,99 +1072,72 @@ video {
 	line-height: 1.25
 }
 
-.text-purple {
-	--tw-text-opacity: 1;
-	color: rgb(89 65 153 / var(--tw-text-opacity))
-}
-
 .text-gray-300 {
-	--tw-text-opacity: 1;
 	color: rgb(209 213 219 / var(--tw-text-opacity))
 }
 
 .text-gray-400 {
-	--tw-text-opacity: 1;
 	color: rgb(156 163 175 / var(--tw-text-opacity))
 }
 
 .text-gray-500 {
-	--tw-text-opacity: 1;
 	color: rgb(107 114 128 / var(--tw-text-opacity))
 }
 
 .text-gray-600 {
-	--tw-text-opacity: 1;
 	color: rgb(75 85 99 / var(--tw-text-opacity))
 }
 
 .text-gray-700 {
-	--tw-text-opacity: 1;
 	color: rgb(55 65 81 / var(--tw-text-opacity))
 }
 
 .text-gray-800 {
-	--tw-text-opacity: 1;
 	color: rgb(31 41 55 / var(--tw-text-opacity))
 }
 
 .text-gray-900 {
-	--tw-text-opacity: 1;
 	color: rgb(17 24 39 / var(--tw-text-opacity))
 }
 
-.text-orange-500 {
-	--tw-text-opacity: 1;
-	color: rgb(249 115 22 / var(--tw-text-opacity))
-}
-
 .text-purple-100 {
-	--tw-text-opacity: 1;
 	color: rgb(237 229 254 / var(--tw-text-opacity))
 }
 
 .text-purple-300 {
-	--tw-text-opacity: 1;
 	color: rgb(192 164 250 / var(--tw-text-opacity))
 }
 
 .text-purple-400 {
-	--tw-text-opacity: 1;
 	color: rgb(163 123 246 / var(--tw-text-opacity))
 }
 
 .text-purple-500 {
-	--tw-text-opacity: 1;
 	color: rgb(135 82 240 / var(--tw-text-opacity))
 }
 
 .text-purple-600 {
-	--tw-text-opacity: 1;
 	color: rgb(117 59 228 / var(--tw-text-opacity))
 }
 
 .text-purple-700 {
-	--tw-text-opacity: 1;
 	color: rgb(100 41 207 / var(--tw-text-opacity))
 }
 
 .text-purple-800 {
-	--tw-text-opacity: 1;
 	color: rgb(83 36 168 / var(--tw-text-opacity))
 }
 
 .text-purple-900 {
-	--tw-text-opacity: 1;
 	color: rgb(89 65 153 / var(--tw-text-opacity))
 }
 
 .text-red-500 {
-	--tw-text-opacity: 1;
-	color: rgb(239 68 68 / var(--tw-text-opacity))
+	color: rgb(239 68 68 / 1)
 }
 
 .text-white {
-	--tw-text-opacity: 1;
-	color: rgb(255 255 255 / var(--tw-text-opacity))
+	color: rgb(255 255 255 / 1)
 }
 
 .underline {
@@ -1323,18 +1276,8 @@ video {
 	animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite
 }
 
-.group:hover .group-hover\:bg-purple-800 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(83 36 168 / var(--tw-bg-opacity))
-}
-
-.group:hover .group-hover\:bg-purple-900 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(89 65 153 / var(--tw-bg-opacity))
-}
-
-.group:hover .group-hover\:opacity-100 {
-	opacity: 1
+.group:hover .group-hover\:bg-primary {
+	background-color: rgb(var(--pfbrand-rgb) / .8)
 }
 
 @media (min-width: 768px) {
@@ -1405,12 +1348,18 @@ video {
 	}
 }
 
-
+section a,
 #donate a { text-decoration: underline; }
+a.button { text-decoration: none; }
 #about p, #volunteer p { margin-bottom: 1em; }
 #contact h4 { margin-top: .4em; margin-bottom: 0; }
 #donate a.rounded-full {
   text-decoration: none;
+}
+h1.page-title { padding-left: 1em; color: #fff; font-size: 1.2rem;}
+.font-logo-hdr {
+    font-family: "Gabarito", sans-serif;
+    font-size: 1.5rem;
 }
 img.photo { border: solid 1px black; }
 img.photo.left { margin-right: 2em; }
