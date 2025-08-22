@@ -36,3 +36,12 @@ D] To push edits live:
 ## Queing Updates
 
 For when you're making edits and want to save them without them going live ... instructions coming soon.
+
+Short is that we have 2 repos serving 2 versions of the site.
+
+1. thepurpleflower.org (live site) repo serves the live site at https://thepurpleflower.org (and https://www.thepurpleflower.org)
+2. new.thepurpleflower.org (preview site) repo serves the preview site at https://new.thepurpleflowerofcc.org (note the different domain name)
+
+Updates will always happen in the second (new.thepurpleflower.org) repo so that changes can be confirmed before pushed live.
+
+Currently, jewel can publish changes by making a few Github command line calls. However, there is a way to automate this so that anyone with access to the live site repo can click a button to publish. That's what's TBD.
