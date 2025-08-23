@@ -1342,8 +1342,13 @@ a.bg-purple:hover {
 #quickExit {
 	position: fixed;	
 	z-index: 50;
-	top: 80%;
+	bottom: 5em;
 	right: 0;
+}
+@media (min-height: 640px){
+	#quickExit {
+		bottom: 20%;
+	}	
 }
 #emergencyBanner {
 	position: fixed;	
@@ -1448,6 +1453,9 @@ a.button { text-decoration: none; }
 }
 h1.page-title { padding-left: 1em; color: #fff; font-size: 1.2rem;}
 h1.main-title { font-family: "Gabarito"; }
+@media (max-height: 680px){
+	h1.main-title { margin-top: 1em;}	
+}
 .font-logo-hdr {
     font-family: "Gabarito", sans-serif;
     font-size: 1.5rem;
