@@ -590,11 +590,11 @@ Carroll County's Only Lifeline for Survivors of Domestic Violence, Sexual Assaul
 /*  EMERGENCY BANNER */
 document.getElementById('quickExit').addEventListener('click', () => {
   // Redirect to a neutral site (e.g., weather.com)
-  window.location.replace('https://weather.com'); 
+  window.location.replace('https://google.com'); 
   // Overwrite history to hide the previous page
-  window.history.pushState(null, null, 'https://weather.com');
+  window.history.pushState(null, null, 'https://google.com');
   window.addEventListener('popstate', () => {
-   window.history.pushState(null, null, 'https://weather.com');
+   window.history.pushState(null, null, 'https://google.com');
   });
 });
 document.getElementById('emergencyBannerClose').addEventListener('click', () => {
