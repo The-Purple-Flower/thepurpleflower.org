@@ -18,100 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles.min.css?v=3">
-  <style>
-  section a {
-    text-decoration: underline;
-  }
-  #donate a.rounded-full {
-    text-decoration: none;
-  }
-  /* Base DL Styling */
-  dl.faq-accordion {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  /* DT = Question */
-  dl.faq-accordion dt {
-    padding: 16px 20px;
-    background-color: #f8f8f8;
-    color: #333;
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
-    margin: 0;
-    border-bottom: 1px solid #e0e0e0;
-    transition: background-color 0.2s;
-  }
-
-  /* Hover and Focus States */
-  dl.faq-accordion dt:hover {
-    background-color: #f0f0f0;
-  }
-
-  dl.faq-accordion dt:focus {
-    outline: 2px solid #6e8cff;
-    outline-offset: -2px;
-  }
-
-  /* Plus/Minus Indicator */
-  dl.faq-accordion dt::after {
-    content: '+';
-    position: absolute;
-    right: 20px;
-    font-size: 1.2em;
-    transition: transform 0.3s;
-  }
-
-  /* DD = Answer (initially hidden) */
-  dl.faq-accordion dd {
-    padding: 0;
-    margin: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease;
-    background-color: white;
-  }
-
-  /* Active State (when clicked) */
-  dl.faq-accordion dt.active {
-    background-color: #e9e9e9;
-    border-bottom-color: transparent;
-  }
-
-  dl.faq-accordion dt.active::after {
-    content: '-';
-  }
-
-  dl.faq-accordion dt.active + dd {
-    padding: 16px 20px;
-    max-height: 1000px; /* Adjust based on your longest content */
-    border-bottom: 1px solid #e0e0e0;
-  }
-
-  /* List styling within answers */
-  dl.faq-accordion dd ul {
-    margin-top: 10px;
-    padding-left: 20px;
-    list-style: disc;
-  }
-
-  dl.faq-accordion dd li {
-    margin-bottom: 8px;
-  }
-
-  /* Remove border from last item */
-  dl.faq-accordion dt:last-of-type,
-  dl.faq-accordion dd:last-of-type {
-    border-bottom: none;
-  }
-  </style>
-
+  <link rel="stylesheet" href="./styles.css?v=4">
 </head>
 <body data-new-gr-c-s-check-loaded="14.1235.0" data-gr-ext-installed="">
 <!-- Google Tag Manager (noscript) -->
@@ -145,84 +52,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container mx-auto px-6 z-10 text-center">
         <div class="max-w-3xl mx-auto">
           <br><br>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight animate-fade-in">FAQs for Supporters</h1>
-          <p class="text-xl md:text-2xl text-purple-100 mb-8 max-w-2xl mx-auto">We're honored to have so many community members interested in helping out. Here's a few FAQs to support our supporters as we scale our volunteer and giving programs.</p>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight animate-fade-in">Volunteer with <br>The Purple Flower</h1>
+          <p class="text-xl md:text-2xl text-purple-100 mb-8 max-w-2xl mx-auto">We're honored to have so many community members interested in helping out.</p>
         </div>
       </div>
     </section>
 
-
-<!-- GET HELP -->
-    <section id="faqs" class="py-20 bg-purple-80">
-      <div class="container mx-auto px-6">
-        <div class="mb-16">
-          <div class="text-xl text-gray-700 max-w-3xl mx-auto">
-
-            <dl class="faq-accordion text-xl">
-              <dt>How can I get involved as a volunteer?</dt>
-              <dd><!-- We're in the process of ramping up a new volunteer coordinator and are excited to have joined
-                several other area non-profits in getting setup on a new platform for making
-                onboarding and coordinating with volunteers much easier.
-                <br><br> -->
-                Due to the nature of our services, some volunteer opportunities require additional screening and onboarding. 
-                Whatever level of involvement you're interested in, once you <a href="#volunteer">begin the application process</a>,
-                you'll be the first to hear as soon as we have volunteer opportunties that match your preferences and availability.
-              </dd>
-
-              <dt>I signed up on a Volunteer List while at an event. When can I expect to hear back from you?</dt>
-              <dd>Thank you for taking the time to give us your contact information.
-              We've been manually entering contact information from paper lists into our new Volunteer Management system.
-            If you still haven't heard from us by mid September 2025, it could be due to a typo or your invitation getting lost in spam. Please accept our sincerest apology and register directly on <a href="https://pointapp.org/orgs/7113" target="_blank">The Point</a>, our new Volunteer Management system.
-              <br><br>
-              By registering, you can also join our mailing list to receive updates on other initiatives, along with volunteer
-              opportunties, as they develop.
-        </dd>
-
-              <dd>Join us on <a href="https://pointapp.org/orgs/7113" target="_blank">The Point</a> app where you can sign up to volunteer with us, and explore other volunteer opportunities in Carroll County. 
-              Once you've signed up, you'll be on our list and will be the first to hear as soon as we have volunteer opportunities based on your preferences and availability.</dd>
-
-              <dt>Do you accept donations of clothes, household items or old phones? What do your clients need?</dt>
-              <dd>
-                Our office has limited space, so please take clothes and household items to local thrift stores (ex: <a href="https://maps.app.goo.gl/cJjGdAzZ8QQBp3BQ6" target="_blank">St. Vincent dePaul in Berryville</a> or <a href="https://maps.app.goo.gl/z9CsELttgGqiu4nv6" target="_blank">ECHO Thrift in Eureka Springs</a>) where our clients are able to get what they need for free. 
-                <br><br>
-                The most useful in-kind donations are cell phones and new bulk supplies for “go bags” we provide to clients staying in temporary emergency safe lodging. Accepted items may be dropped off at <a href="./directions.html">our office during regular business hours</a>:
-                <ul>
-                  <li><b>Used, unlocked phones</b>&mdash;to donate a phone, it must not be tied to a specific cell service provider (Verizon, AT&T, etc.). Please contact your provider for instructions on how to unlock your phone before bringing it in.</li>
-                  <li><b>Personal Hygiene Products</b>&mdash;toothbrushes, toothpaste, soap, combs, brushes, socks, underwear, travel-size shampoo, tampons and pads, etc.</li>
-                  <li><b>Shelf-stable food</b> that doesn’t require refrigeration and can be heated up in a <em>microwave</em>.
-                  <li><b>Condiment packets and utensils</b>&mdash;sealed & clean</li>
-                </ul>
-                <p>You can also buy direct from our <a href="https://www.amazon.com/hz/wishlist/ls/F1BDAPQ14RSS?ref_=wl_share" target="_blank" rel="noopener noreferrer" data-ga-track="Amazon Wishlist" class="ga-track">Amazon Wish List</a>!</p>
-              </dd>
-
-              <dt>Where and when can I drop off supplies?</dt>
-              <dd>You can drop off supplies anytime during <a href="./directions.html">regular business hours at our office in Berryville</a>.</dd>
-
-              <dt>I'm a Service Professional that would like to provide translation services, counseling, legal, therapeutic, or other licensed care to your clients. Who should I reach out to?</dt>
-              <dd>
-Thank you! Clients in various stages of crisis and stabilization often need support from professionals like you. 
-We offer referrals where and when we can, but many cannot afford to pay for professional support. 
-<br><br>
-If you would like to be added to our referrals list, especially if you are willing to donate your services pro bono or at a reduced rate, please email <b>info&#x40;thepurpleflower.org</b> with your contact information and a link to the services you provide.
-              </dd>
-
-              <dt>I have another question not answered by these FAQs. What's the best way to ask?</dt>
-              <dd>Email us at <b>info&#x40;thepurpleflower.org</b>. We appreciate you helping to keep our phone line open for potential crisis callers.</dd>
-
-              <dt>Do You Have an Amazon Wish List?</dt>
-              <dd>We do! You can purchase essential items directly for clients and our operations from our <a href="https://www.amazon.com/hz/wishlist/ls/F1BDAPQ14RSS?ref_=wl_share" target="_blank" rel="noopener noreferrer">Amazon Wishlist</a>.</dd>
-
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
 
 <!-- VOLUNTEER --> 
-    <section id="volunteer" class="py-20 bg-purple-100">
+    <section id="volunteer" class="py-20">
       <div class="container mx-auto px-6">
         <div class="mb-16 px-6 text-center">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Getting Started as a Volunteer</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Getting Started</h2>
         </div>
         <div class="max-w-3xl mx-auto text-xl">
     
@@ -230,10 +71,25 @@ If you would like to be added to our referrals list, especially if you are willi
             Join us on <a href="https://pointapp.org/orgs/7113" target="_blank">The Point</a> app where you can sign up to volunteer with us, and explore other volunteer opportunities in Carroll County. Once you've created an account, be sure to "Join" The Purple Flower to join our interested list. Due to the nature of our services, some volunteer opportunities require additional orientation and vetting. Whatever level of involvement you're interested in, once you join our list, you'll be the first to hear as soon as we have volunteer opportunties that match your preferences and availability.
           -->
 
+            <p>Due to the nature of our services, some volunteer opportunities require additional screening and onboarding. 
+            Whatever level of involvement you're interested in, once you begin the application process,
+            you'll be the first to hear as soon as we have volunteer opportunties that match your preferences and availability.</p>
 
-            <p>We've joined several non-profits in Carroll County in launching our Volunteer Program on <a href="https://pointapp.org/orgs/7113" target="_blank">The Point</a> app &mdash; which gives community members an easy way to access all volunteer opportunities in our area.</p>
+
+            <h3>Specialty Volunteer Opportunities</h3>
+             <p>We could use help with 1-on-1 specialty services like Translation, Emergency Transport, Legal Services, Client Advocacy, and administrative tasks requring training. If you'd like to be considered for such specialty volunteer services, please
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSclDGT8g6PD1B2seiPxcZY3E9vD-IIT-oIhxPlT8DI2bUVBig/viewform?usp=header"  target="_blank">submit this interest form</a> and as opportunities and trainings arise, we'll be in touch. </p>
+
+
+            <p>To get started, 
+
+
+            <p>We've joined several non-profits in Carroll County in launching our Volunteer Program on <a href="https://pointapp.org/orgs/7113" target="_blank">The Point</a> app, giving community members an easy way to access all volunteer opportunities in our area.</p>
 
             <p>Due to our limited staffing and the high demand for our services, we haven't historically been able to keep up with the interest of volunteers. We appreciate that not everyone interested in helping out may want to join another app, and we also appreciate your understanding and willingness to try something new.</p>
+
+
 
           <h3>Creating Your Account</h3>
              <p>To get started, go to <a href="https://pointapp.org/orgs/7113" target="_blank">The Purple Flower on The Point</a> and click "Join Us" (see screenshot). This will prompt you to create an account (if you don't yet have one) and will then add you to our organization. You may not see any immediate events, but rest assured that we will be notified of your interest.</p>
@@ -257,6 +113,108 @@ If you would like to be added to our referrals list, especially if you are willi
   </div>
 </div>
 
+    <footer id="contact" class="bg-gray text-white pt-12 pb-8">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <img src="assets/pf-logo-wht-bkgrd_200sq.png" alt="The Purple Flower Logo" loading="lazy" class="h-12 w-12 mr-2">
+              <h3 class="text-2xl font-honeymoon">The Purple Flower</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Carroll County's only resource and support center for survivors of domestic violence, sexual assault and human trafficking.</p>
+            <p class="text-gray-400 text-sm">501(c)(3) Nonprofit | Tax ID: 47-2661286</p>
+            <div class="flex space-x-4 mt-6">
+              <a href="https://domesticpeace.com/"><img src="./assets/ACADV-logo-2022-clear-white.png" alt="ACADV Logo" height="60" style="height:60px; margin-top:20px; margin-right: 1em;" loading="lazy"></a>
+              <a href="https://www.arkcasa.org/"><img src="./assets/acasalogo.png" alt="ACASA Logo" height="100" style="height:100px;"loading="lazy"></a></div>
+              <br><br>
+            <div class="flex space-x-4 mb-6">
+              <a href="https://www.facebook.com/thepurpleflowerofcc" target="_blank" rel="noopener noreferrer" class="bg-purple hover:bg-purple-600 p-3 rounded-full transition-colors" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook ">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/thepurpleflowerarkansas/" target="_blank" rel="noopener noreferrer" class="bg-purple hover:bg-purple-600 p-3 rounded-full transition-colors" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram ">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+
+
+          </div>
+          <div>
+            <p>If you are in immediate danger, please <a href="tel:911">call 911</a>.</p>
+
+
+            <h3 class="text-xl font-bold mb-4 mt-2">Contact Us</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 2.2em;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-purple-400 mr-3 mt-1">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <h4 class="text-gray-300">24/7 Crisis Line / Línea de Crisis</h4>
+                  <a href="tel:4799811676" class="text-purple-300 hover:text-purple-200">479-981-1676</a>
+                  <p class="text-gray-400 text-sm mt-1">Call or Text / Llama o Mensaje</p>
+                </div>
+
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 2.2em;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-purple-400 mr-3 mt-1">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <h4 class="text-gray-300">Non-Crisis Mon-Fri 10am-3pm</h4>
+                  <a href="tel:4799811676" class="text-purple-300 hover:text-purple-200">479-981-1676</a>
+                  <p class="text-gray-400 text-sm mt-1">Please only call during our office hours to keep the Crisis Line free
+                  for emergencies</p>
+                </div>
+              </li>
+
+               <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-purple-400 mr-3 mt-1">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div>
+                  <a href="mailto:info@thepurpleflower.org" class="text-purple-300 hover:text-purple-200">info@thepurpleflower.org</a>
+                </div>
+              </li>
+
+               <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-purple-400 mr-3 mt-1">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <p class="text-gray-300">
+                    <a data-ga-track="Getting Here" class="ga-track underline" href="https://maps.app.goo.gl/Jqto5yi9p1Xg5ZfPA" target="_blank">Getting Here</a>:</p>
+                  <address class="not-italic text-gray-400"><b>Monday-Friday 10am-3pm</b><br>109 W. Church Avenue<br>Berryville (around the corner from the DMV)<br></address>
+                </div>
+              </li>
+
+               <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-purple-400 mr-3 mt-1">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <p class="text-gray-300"><a href="https://maps.app.goo.gl/Jqto5yi9p1Xg5ZfPA">Mailing Address:</a></p>
+                  <address class="not-italic text-gray-400">P.O. Box 265<br>Berryville, AR 72616</address>
+                </div>
+
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray pt-6 text-center">
+          <p class="text-gray-400 text-sm">© 2025 The Purple Flower. All rights reserved.</p>
+          <br /><br />
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
 
 <script type="text/javascript">
     // Simple JavaScript to toggle the active class
