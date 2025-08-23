@@ -15,6 +15,7 @@
 	--tw-bg-opacity: 1;
 	--tw-border-opacity: 1;
 	--pfbrand-rgb: 89 65 153;
+	--purple-200: 218 203 252;
 }
 .bg-pfbrand {
 	background-color: rgb(var(--pfbrand-rgb) / 1);
@@ -387,28 +388,34 @@ video {
 	.container {
 		max-width: 640px
 	}
+	#headerBar { 
+		max-width:720px; 
+	}
 }
 
 @media (min-width: 768px) {
 	.container {
 		max-width: 768px
 	}
+	#headerBar { 
+		max-width:1000px; 
+	}
 }
 
 @media (min-width: 1024px) {
-	.container {
+	.container, #headerBar {
 		max-width: 1024px
 	}
 }
 
 @media (min-width: 1280px) {
-	.container {
+	.container, #headerBar {
 		max-width: 1280px
 	}
 }
 
 @media (min-width: 1536px) {
-	.container {
+	.container, #headerBar {
 		max-width: 1536px
 	}
 }
@@ -464,13 +471,7 @@ video {
 	top: 0
 }
 
-.top-1\/2 {
-	top: 50%
-}
-
-.top-full {
-	top: 100%
-}
+.top-full {top: 100% }
 
 .z-0 {
 	z-index: 0
@@ -1188,43 +1189,35 @@ a.bg-purple:hover {
 }
 
 .hover\:bg-gray-100:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(243 244 246 / 1)
 }
 
 .hover\:bg-purple-100:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(237 229 254 / 1)
 }
 
 .hover\:bg-purple-600:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(117 59 228 / 1)
 }
 
 .hover\:bg-purple-700:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(100 41 207 / 1)
 }
 
 .hover\:bg-purple-800:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(83 36 168 / 1)
 }
 
 .hover\:bg-red-700:hover {
-	--tw-bg-opacity: 1;
 	background-color: rgb(185 28 28 / 1)
 }
 
 .hover\:text-purple-200:hover {
-	--tw-text-opacity: 1;
-	color: rgb(218 203 252 / var(--tw-text-opacity))
+	color: rgb( var(--purple-200) / 1);
 }
 
 .hover\:text-white:hover {
-	--tw-text-opacity: 1;
-	color: rgb(255 255 255 / var(--tw-text-opacity))
+	color: rgb(255 255 255 / 1)
 }
 
 .hover\:shadow-lg:hover {
@@ -1260,6 +1253,25 @@ a.bg-purple:hover {
 }
 
 @media (min-width: 768px) {
+	.md\:relative {
+		position: relative
+	}
+	.md\:top-auto {
+
+	}
+	.md\:flex {
+
+	}
+	.md\:flex-row {
+
+	}
+	.md\space-y-0
+	.md\:space-x-6>:not([hidden])~:not([hidden]) {
+		--tw-space-x-reverse: 0;
+		margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+		margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
+	}
+
 	.md\:mb-0 {
 		margin-bottom: 0
 	}
@@ -1325,6 +1337,105 @@ a.bg-purple:hover {
 		font-size: 3.75rem;
 		line-height: 1
 	}
+}
+
+#quickExit {
+	position: fixed;	
+	z-index: 50;
+	top: 80%;
+	right: 0;
+}
+#emergencyBanner {
+	position: fixed;	
+	z-index: 50;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+#headerBar {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+#topNav {
+	display:flex;
+	flex-direction: column;
+	background-color: #333;
+	gap: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+#allNav, #mainNav {
+  /* Default styles for all screen sizes (primarily mobile) */
+  display: none;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* 16px, for vertical spacing between links */
+  padding: 1rem;
+}
+#allNav.flex, #mainNav.flex {
+	display: flex;
+}
+#mainNav a {
+	color: #fff;
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	transition-duration: .15s;
+}
+#mainNav a:hover {
+	color: rgb(var(--purple-200) / 1);
+}
+
+/* Styles for medium and larger screens */
+@media (min-width: 555px) and (max-width: 849px) {
+  #mainNav {
+  	position: absolute;
+  	background-color: #333;
+  	top: 100%;
+  	left: 0;
+  	right: 0;
+  }
+}
+@media (min-width: 850px) {
+	#mobileMenu {
+		display: none;
+	}
+  #mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  #allNav {
+  	font-size: 1.1rem;
+  }
+  #topNav {
+  	gap: 1.5rem;
+  	flex-direction: row;
+  }
+}
+@media (min-width: 554px) {
+  #topNav {
+  	background-color: transparent;
+  	position: static;
+  }
+  #allNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  #allNav,
+  #mainNav {
+  	gap: 1em;
+  }
 }
 
 section a,
