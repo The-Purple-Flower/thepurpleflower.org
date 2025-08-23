@@ -1342,7 +1342,7 @@ a.bg-purple:hover {
 #quickExit {
 	position: fixed;	
 	z-index: 50;
-	bottom: 5em;
+	bottom: 25%;
 	right: 0;
 }
 @media (min-height: 640px){
