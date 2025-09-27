@@ -1339,6 +1339,7 @@ a.bg-purple:hover {
 	}
 }
 
+/* PRIMARY NAVIGATIONAL AND UI ELEMENTS */
 #quickExit {
 	position: fixed;	
 	z-index: 50;
@@ -1379,7 +1380,7 @@ a.bg-purple:hover {
   font-size: 1rem;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; /* 16px, for vertical spacing between links */
+  gap: 1rem;
   padding: 1rem;
 }
 #allNav.flex, #mainNav.flex {
@@ -1443,7 +1444,94 @@ a.bg-purple:hover {
   }
 }
 
+/* SECTIONAL STYLES */
+  /* Base DL Styling */
+  dl.faq-accordion {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* DT = Question */
+  dl.faq-accordion dt {
+    padding: 16px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+  }
+
+  /* Hover and Focus States */
+  dl.faq-accordion dt:hover {
+    background-color: #f0f0f0;
+  }
+
+  dl.faq-accordion dt:focus {
+    outline: 2px solid #6e8cff;
+    outline-offset: -2px;
+  }
+
+  /* Plus/Minus Indicator */
+  dl.faq-accordion dt::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+  }
+
+  /* DD = Answer (initially hidden) */
+  dl.faq-accordion dd {
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background-color: white;
+  }
+
+  /* Active State (when clicked) */
+  dl.faq-accordion dt.active {
+    background-color: #e9e9e9;
+    border-bottom-color: transparent;
+  }
+
+  dl.faq-accordion dt.active::after {
+    content: '-';
+  }
+
+  dl.faq-accordion dt.active + dd {
+    padding: 16px 20px;
+    max-height: 1000px; /* Adjust based on your longest content */
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* List styling within answers */
+  dl.faq-accordion dd ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  dl.faq-accordion dd li {
+    margin-bottom: 8px;
+  }
+
+  /* Remove border from last item */
+  dl.faq-accordion dt:last-of-type,
+  dl.faq-accordion dd:last-of-type {
+    border-bottom: none;
+  }
+
 section a,
+section#faqs a,
 #donate a { text-decoration: underline; }
 a.button { text-decoration: none; }
 #about p, #volunteer p { margin-bottom: 1em; }

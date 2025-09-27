@@ -46,4 +46,6 @@ Updates will always happen in the second (new.thepurpleflower.org) repo so that 
 
 Currently, jewel can publish changes by making a few Github command line calls. However, there is a way to automate this so that anyone with access to the live site repo can click a button to publish. That's what's TBD.
 
+## Optimizations
+
 https://www.minifier.org/
