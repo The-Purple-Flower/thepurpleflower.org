@@ -27,9 +27,25 @@ C] To make edits and preview them before going live:
 D] To push edits live:
 1. Open your Github Desktop App
 2. Review the edits. It will show you line-by-line edits.
-3. Enter a description of the change(s) you've made.
-4. Then "Push to Origin"
+3. Enter a description of the change(s) you've made. 
+4. Click "Commit"
+5. You will now see a screen that says "No local changes" with a button to "Push Origin" — click that
+6. It can take a couple of minutes for the live site to reflect the changes
+7. Verify by going to https://thepurpleflower.org
 
 ## Queing Updates
 
 For when you're making edits and want to save them without them going live ... instructions coming soon.
+
+Short is that we have 2 repos serving 2 versions of the site.
+
+1. thepurpleflower.org (live site) repo serves the live site at https://thepurpleflower.org (and https://www.thepurpleflower.org)
+2. new.thepurpleflower.org (preview site) repo serves the preview site at https://new.thepurpleflowerofcc.org (note the different domain name)
+
+Updates will always happen in the second (new.thepurpleflower.org) repo so that changes can be confirmed before pushed live.
+
+Currently, jewel can publish changes by making a few Github command line calls. However, there is a way to automate this so that anyone with access to the live site repo can click a button to publish. That's what's TBD.
+
+## Optimizations
+
+https://www.minifier.org/
