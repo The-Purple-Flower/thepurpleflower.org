@@ -41,17 +41,41 @@ D] To preview edits on the staging site:
 6. Review your updates at https://new.thepurpleflowerofcc.org
 
 E] To push edits live:
-Hit up jewel to publish -or- if you've been setup with the "livetesting-main" branch (which is a local-only branch), continue with the following steps.
+Hit up jewel to publish -or- if you've been setup with the "production-merge" branch (which is a local-only branch), continue with the following steps.
 
 1. Open your Github Desktop App
 2. Select your "livetesting-main" branch
-3. From the command line: merge the "TESTING" branch into your "livetesting-main" branch
+3. From the command line: merge the "TESTING" branch into your "production-merge" branch
 4. From the Github Desktop App: hit "Push Origin"
 5. Go to Github.com > thepurpleflower.org repo > Pull Requests
-6. Review the open pull request that should have been created automatically after the "livetesting-main" branch was pushed
-7. Assuming it all looks good and can be merged automatically, hit 'merge' to close the PR — be sure to make sure that the CNAME file IS NOT CHANGED ... as that will make the live site error out
+6. Open and review PR for `preview` branch into `main` branch
+7. Check to make sure that the `CNAME` file is not in the commit and is not changed. If the PR looks good, you can safely merge and close the PR
 8. It can take a couple of minutes for the live site to reflect the changes
 7. Verify by going to https://thepurpleflower.org
+
+
+## Caution
+
+Working directly on the producton code base (thepurpleflower.org) can wreak havoc when we do need to work on staging site (new.thepurpleflower.org) due to the disparate CNAME files that need to be separate in each repo due to github hosting the sites.
+
+If an update is accidentally made on production and not staging, then it should manually be copied over to the staging code base and committed- so future updates don't accidentally roll-back production.
+
+## Setting Up a Local "preview-to-production" Branch
+
+
+1. Add the live repo as a remote named 'live-testing'
+git remote add live-testing https://github.com/The-Purple-Flower/thepurpleflower.org.git
+
+2. Create the "Production-Merge" Branch
+git checkout -b production-merge
+
+3. Edit the CNAME file so it matches the PRODUCTION website
+thepurpleflower.org
+
+4. Push and Link to the Live Repo's "Preview" Branch
+git push -u live-testing production-merge:preview
+
+
 
 ## Queing Updates
 
